@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
+    public void ExitButton()
     {
-        SceneManager.LoadSceneAsync("MiniJuego");
+        Application.Quit();
+        Debug.Log("Game closed");
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Level 1");
     }
 }

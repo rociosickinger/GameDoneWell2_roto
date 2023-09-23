@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -71,8 +72,10 @@ public class PlayerController : MonoBehaviour
 
 		if (count >= 8)
 		{
-			// Set the text value of your 'winText'
-			winTextObject.SetActive(true);
+			
+			SceneManager.LoadScene("Level 2");
 		}
 	}
+
+	// Update o fixedupdate? codigo para que una vez que recaude los ocho objetos pase al siguiente nivel
 }
